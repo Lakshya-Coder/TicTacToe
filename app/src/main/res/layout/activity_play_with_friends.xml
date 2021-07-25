@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1F185D"
+        tools:context=".PlayWithFriends">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/app_name" />
+
+        <TextView
+            android:id="@+id/player_one_text_view"
+            style="@style/text_view_style"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/andika"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+        <TextView
+            android:id="@+id/player_one_score_text_view"
+            style="@style/text_view_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/andika"
+            android:text="@string/_0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/player_one_text_view" />
+
+        <TextView
+            android:id="@+id/player_two_text_view"
+            style="@style/text_view_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="28dp"
+            android:fontFamily="@font/andika"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+        <TextView
+            android:id="@+id/player_two_score_text_view"
+            style="@style/text_view_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/andika"
+            android:text="@string/_0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/player_two_text_view"
+            app:layout_constraintTop_toBottomOf="@+id/player_two_text_view" />
+
+        <TextView
+            android:id="@+id/player_status_text_view"
+            style="@style/text_view_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/player_one_score_text_view" />
+
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:columnCount="3"
+            android:padding="20dp"
+            android:rowCount="3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/player_status_text_view"
+            app:layout_constraintVertical_bias="0.123">
+
+            <TableRow android:gravity="center">
+
+                <Button
+                    android:id="@+id/button_0"
+                    style="@style/button_style" />
+
+                <Button
+                    android:id="@+id/button_1"
+                    style="@style/button_style" />
+
+                <Button
+                    android:id="@+id/button_2"
+                    style="@style/button_style" />
+
+            </TableRow>
+
+            <TableRow android:gravity="center">
+
+                <Button
+                    android:id="@+id/button_3"
+                    style="@style/button_style" />
+
+                <Button
+                    android:id="@+id/button_4"
+                    style="@style/button_style" />
+
+                <Button
+                    android:id="@+id/button_5"
+                    style="@style/button_style" />
+
+            </TableRow>
+
+            <TableRow android:gravity="center">
+
+                <Button
+                    android:id="@+id/button_6"
+                    style="@style/button_style" />
+
+                <Button
+                    android:id="@+id/button_7"
+                    style="@style/button_style" />
+
+                <Button
+                    android:id="@+id/button_8"
+                    style="@style/button_style" />
+
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#D32F2F"
+            android:fontFamily="@font/andika"
+            android:padding="10dp"
+            android:text="@string/restart"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="29dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/exit"
+            app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#32288E"
+            android:padding="15dp"
+            android:text="@string/exit"
+            app:cornerRadius="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/reset"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="restart">Restart</string>
+    <string name="tic_tac_toe">Tic Tac Toe</string>
+    <string name="cross">X</string>
+    <string name="circle">O</string>
+    <string name="welcome_to_tic_tac_toe">Welcome to tic tac toe</string>
+    <string name="chose_your_play_mode">Choose your play mode</string>
+    <string name="with_ai">With ai</string>
+    <string name="with_a_friend">With a friend</string>
+    <string name="pick_your_side">Pick your side</string>
+    <string name="continue_text">Continue</string>
+    <string name="computer_won">Computer won</string>
+    <string name="player_won">Player won</string>
+    <string name="game_over">Game Over</string>
+    <string name="me">Me</string>
+    <string name="_0">0</string>
+    <string name="ai">Ai</string>
+    <string name="exit">Exit</string>
+    <string name="second_player_hint">Second player name</string>
+    <string name="second_player_auto_fill_hint">Second player name</string>
+    <string name="first_player_hint">First player name</string>
+    <string name="first_player_auto_fill_hint">First player name</string>
+    <string name="next_text">Next</string>
+</resources>

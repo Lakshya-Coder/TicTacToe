@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lakshyagupta7089.tictactoe">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_for_tic_tac_toe"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_for_tic_tac_toe"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TicTacToe">
+        <activity android:name=".PlayWithFriends"/>
+        <activity android:name=".ChoseXOrOActivityForFriends" />
+        <activity android:name=".TakePlayerNameActivity" />
+        <activity android:name=".ChoseXOrOForAi" />
+        <activity android:name=".SelectTypeOfGame" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
